@@ -1642,6 +1642,8 @@ ul.arrow {
                 transition: .3s ease; }
         .movie-list .movie .movie-title a:hover {
           color: #ffaa3c; }
+		  
+		  
 
 .pagination {
   clear: both;
@@ -1701,3 +1703,60 @@ ul.arrow {
       color: #ffaa3c; }
   .site-footer .colophon {
     padding-top: 30px; }
+	
+	
+	
+	----
+	.episode-list {
+  margin: 0 -15px;
+height: 50%;
+padding: 0;
+float: center;
+overflow: auto; height: 100px; background-color:red; }
+  .episode-list .episode {
+    width: 25%;
+    padding: 0 15px;
+    float: left;
+    margin-bottom: 30px; }
+
+    @media screen and (min-width: 991px) {
+      .episode-list .episode:nth-child(4n+1) {
+        clear: both; } }
+    @media screen and (max-width: 990px) {
+      .episode-list .episode {
+        width: 50%; }
+        .episode-list .episode:nth-child(4n+1) {
+          clear: none; }
+        .episode-list .episode:nth-child(2n+1) {
+          clear: both; } }
+    @media screen and (max-width: 480px) {
+      .episode-list .episode {
+        width: 100%;
+        clear: both; } }
+    .episode-list .episode .episode-poster {
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      border: 1px solid transparent; }
+      .episode-list .episode .episode-poster img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        -webkit-transition: .3s ease;
+                transition: .3s ease; }
+    .episode-list .episode:hover img {
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2); }
+    .episode-list .episode .episode-title {
+      font-size: 24px;
+      font-size: 1.6em;
+      font-weight: 300;
+      margin-bottom: 20px; }
+      .episode-list .episode .episode-title a {
+        color: #84878d;
+        -webkit-transition: .3s ease;
+                transition: .3s ease; }
+        .episode-list .episode .episode-title a:hover {
+          color: #ffaa3c; }
