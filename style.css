@@ -1795,16 +1795,13 @@ color: white;
 	  height: 240;
 }
 
+
+
 /**
  * Simple fade transition,
  */
 
-body a{
-  font-family: helvetica;
-  color: black;
-  text-transform: uppercase;
-  font-size: 2rem;
-}
+
 
 .mfp-fade.mfp-bg {
 	opacity: 0;
@@ -1830,4 +1827,13 @@ body a{
 }
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
 	opacity: 0;
+}
+
+.popup {
+	@media (min-width: 60em) {
+      height:75%;
+  	 margin:5% auto;
+  	 max-height: 57em;
+      max-width:66em;
+      width:85%;
 }
