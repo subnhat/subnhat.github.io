@@ -1824,6 +1824,7 @@ color: white;
 	-webkit-transition: all 0.15s ease-out; 
 	-moz-transition: all 0.15s ease-out; 
 	transition: all 0.15s ease-out;
+	
 }
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
 	opacity: 1;
@@ -1832,11 +1833,3 @@ color: white;
 	opacity: 0;
 }
 
-.popup {
-	@media (min-width: 60em) {
-      height:75%;
-  	 margin:5% auto;
-  	 max-height: 57em;
-      max-width:66em;
-      width:85%;
-}
