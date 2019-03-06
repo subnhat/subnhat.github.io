@@ -1733,6 +1733,11 @@ border: 2px solid #ccccff;
   border-radius: 15px 20px 20px 5px;
   opacity: 1;
   display: block;
+  @media screen and (max-width: 500px) {
+  .episode {
+    width: 100%;
+	height: 240px;
+  }
 
 }
 
@@ -1791,10 +1796,7 @@ color: white;
   .episode {
     width: 100%;
   }
-  .episode img {
-	  max-height: 244px;
-	  min-height: 240px;
-}
+  
 
 
 
