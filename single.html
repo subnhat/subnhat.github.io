@@ -17,15 +17,21 @@
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>		
 		<script src="js/app.js"></script>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	`	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/path/to/modal-video.min.css">
+		<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="/path/to/modal-video.js"></script>
 		
 
 		<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
 		<![endif]-->
+		<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+
+<!-- Magnific Popup core JS file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
 	</head>
 
@@ -97,10 +103,24 @@
 								</div>
 							</div> <!-- .row -->
 							<div class="entry-content">
+							<script>
+$(document).ready(function() {
+	$('.popup').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
+});
+
+</script>
 								<div class="episodes-list">
   <div class="episode">
    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep3.png" style="width:100%; height:90px">
-    <div class="text"><div src="" type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="//www.youtube.com/embed/JTgzyFXmI3w?autoplay=1" data-target="#myModal">Tập 1</div></div>
+    <div class="text"><a class="popup" href="//ok.ru/videoembed/42976479833">Tập 1</a></div></div>
   </div>
   <div class="episode">
     <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep2.png" style="width:100%; height:90px">
@@ -157,28 +177,7 @@
 	
 				</div> <!-- .container -->
 				
-				<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-      
-      <div class="modal-body">
-
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>        
-        <!-- 16:9 aspect ratio -->
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-</div>
-        
-        
-      </div>
-
-    </div>
-  </div>
-</div> 
+				
 			</main>
 			<footer class="site-footer">
 				<div class="container">
@@ -250,12 +249,7 @@
 		</div>
 		<!-- Default snippet for navigation -->
 				
-		<script src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
-<script src='https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.js'></script>
-
- 
-
-    <script  src="js/index.js"></script>
+		
 	</body>
 
 </html>
