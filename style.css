@@ -1705,58 +1705,95 @@ ul.arrow {
     padding-top: 30px; }
 	
 	
-	
-	----
-	.episode-list {
-  margin: 0 -15px;
-height: 50%;
-padding: 0;
-float: center;
-overflow: auto; height: 100px; background-color:red; }
-  .episode-list .episode {
-    width: 25%;
-    padding: 0 15px;
-    float: left;
-    margin-bottom: 30px; }
+	* {
+  box-sizing: border-box;
+}
 
-    @media screen and (min-width: 991px) {
-      .episode-list .episode:nth-child(4n+1) {
-        clear: both; } }
-    @media screen and (max-width: 990px) {
-      .episode-list .episode {
-        width: 50%; }
-        .episode-list .episode:nth-child(4n+1) {
-          clear: none; }
-        .episode-list .episode:nth-child(2n+1) {
-          clear: both; } }
-    @media screen and (max-width: 480px) {
-      .episode-list .episode {
-        width: 100%;
-        clear: both; } }
-    .episode-list .episode .episode-poster {
-      border-radius: 5px;
-      overflow: hidden;
-      margin-bottom: 20px;
-      border: 1px solid transparent; }
-      .episode-list .episode .episode-poster img {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        -webkit-transition: .3s ease;
-                transition: .3s ease; }
-    .episode-list .episode:hover img {
-      -webkit-transform: scale(1.2);
-          -ms-transform: scale(1.2);
-              transform: scale(1.2); }
-    .episode-list .episode .episode-title {
-      font-size: 24px;
-      font-size: 1.6em;
-      font-weight: 300;
-      margin-bottom: 20px; }
-      .episode-list .episode .episode-title a {
-        color: #84878d;
-        -webkit-transition: .3s ease;
-                transition: .3s ease; }
-        .episode-list .episode .episode-title a:hover {
-          color: #ffaa3c; }
+/*
+ * Episode List
+ */
+
+.episode {
+  float: left;
+  width: 10%;
+  padding: 5px;
+  position: relative;
+
+}
+
+.episode-list::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+img#ep-num {
+border: 2px solid #ccccff;
+  border-radius: 15px 20px 20px 5px;
+  opacity: 1;
+  display: block;
+
+}
+
+.episode:hover #ep-num {
+  opacity: 0.6;
+}
+
+.episode:hover .text {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 16px;
+  padding: 5px 20px;
+   transition: .5s ease;
+   height: 40px;
+   width: 100%;
+   opacity: 0;
+     transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay {
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 95;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+
+@media screen and (max-width: 500px) {
+  .episode {
+    width: 100%;
+	max-height: 95px;
+  }
+}
+
+/***
+Modal video
+***/
+ 
+}
+.close {
+  position: absolute;
+  top:0;
+  z-index: 999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+
+}
+

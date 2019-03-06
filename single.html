@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>episode Review | Single</title>
+		<title>Movie Review | Single</title>
 
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
@@ -13,7 +13,15 @@
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>		
+		<script src="js/app.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		
+
 		<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
@@ -41,17 +49,12 @@
 						<ul class="menu">
 							<li class="menu-item"><a href="index.html">Home</a></li>
 							<li class="menu-item"><a href="about.html">About</a></li>
-							<li class="menu-item"><a href="film.html">List Phim</a></li>
-							<li class="menu-item current-menu-item"><a href="anime.html">Anime</a></li>
-							<li class="menu-item"><a href="contact.html">Liên Hệ</a></li>
+							<li class="menu-item current-menu-item"><a href="film.html">Drama</a></li>
+							<li class="menu-item"><a href="anime.html">Anime</a></li>
+							<li class="menu-item"><a href="contact.html">Movie</a></li>
 						</ul> <!-- .menu -->
 
-						<form action="#" class="search-form">
-							<input type="text" placeholder="Search...">
-							<button><i class="fa fa-search"></i></button>
-						</form>n><i class="fa fa-search"></i></button>
-						</form>
-					</div> <!-- .main-navigation -->
+						
 
 					<div class="mobile-navigation"></div>
 				</div>
@@ -61,23 +64,23 @@
 					<div class="page">
 						<div class="breadcrumbs">
 							<a href="index.html">Home</a>
-							<a href="review.html">episode Review</a>
+							<a href="review.html">Movie Review</a>
 							<span>The Croods</span>
 						</div>
 
 						<div class="content">
 							<div class="row">
 								<div class="col-md-6">
-									<figure class="episode-poster"><img src="dummy/single-image.jpg" alt="#"></figure>
+									<figure class="movie-poster"><img src="dummy/single-image.jpg" alt="#"></figure>
 								</div>
 								<div class="col-md-6">
-									<h2 class="episode-title">The Croods</h2>
-									<div class="episode-summary">
+									<h2 class="movie-title">The Croods</h2>
+									<div class="movie-summary">
 										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
 
 										<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit sed.</p>
 									</div>
-									<ul class="episode-meta">
+									<ul class="movie-meta">
 										<li><strong>Rating:</strong> 
 											<div class="star-rating" title="Rated 4.00 out of 5"><span style="width:80%"><strong class="rating">4.00</strong> out of 5</span></div>
 										</li>
@@ -94,92 +97,88 @@
 								</div>
 							</div> <!-- .row -->
 							<div class="entry-content">
-								<div class="episode-list">
-							<div class="episode">
-								<figure class="episode-poster"><iframe width="270" height="244" src="//ok.ru/videoembed/42976479833" frameborder="0" allow="autoplay" allowfullscreen></iframe></figure>
-								<div class="episode-title"><a href="single.html">Maleficient</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
+								<div class="episodes-list">
+  <div class="episode">
+   <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep3.png" style="width:100%; height:90px">
+    <div class="text"><div src="" type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://ok.ru/videoembed/42976479833" data-target="#myModal">Tập 1</div></div>
+  </div>
+  <div class="episode">
+    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep2.png" style="width:100%; height:90px">
+    <div class="text" >Tập 2</div>
+  </div>
+  <div class="episode">
+    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep3.png" style="width:100%; height:90px">
+	 <div class="text">Tập 3</div>
+
+  </div>
+  <div class="episode">
+    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep1.png" style="width:100%; height:90px">
+  </div>
+  <div class="episode">
+    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep2.png" style="width:100%; height:90px">
+  </div>
+  <div class="episode">
+    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep3.png" style="width:100%; height:90px">
+  </div>
+  <div class="episode">
+    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep1.png" style="width:100%; height:90px">
+  </div>
+  <div class="episode">
+    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep2.png" style="width:100%; height:90px">
+  </div>
+  <div class="episode">
+    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep3.png" style="width:100%; height:90px">
+  </div>
+  <div class="episode">
+    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep1.png" style="width:100%; height:90px">
+  </div>
+  <div class="episode">
+    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep2.png" style="width:100%; height:90px">
+  </div>
+  <div class="episode">
+    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep3.png" style="width:100%; height:90px">
+  </div>
+  <div class="episode">
+    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep1.png" style="width:100%; height:90px">
+  </div>
+  <div class="episode">
+    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep2.png" style="width:100%; height:90px">
+  </div>
+  <div class="episode">
+    <img id="ep-num" src="anime-episode\gintama-ss1\gintama-ss1-ep3.png" style="width:100%; height:90px">
+  </div>
+</div>
+
+
 							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-4.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">The adventure of Tintin</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-5.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">Hobbit</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-6.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">Exists</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-1.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">Drive hard</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-2.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">Robocop</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-7.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">Life of Pi</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-8.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">The Colony</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-3.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">Maleficient</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-4.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">The adventure of Tintin</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-5.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">Hobbit</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-6.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">Exists</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-1.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">Drive hard</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-2.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">Robocop</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-7.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">Life of Pi</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="episode">
-								<figure class="episode-poster"><img src="dummy/thumb-8.jpg" alt="#"></figure>
-								<div class="episode-title"><a href="single.html">The Colony</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-						</div> <!-- .episode-list -->
-							</div>
+							
 						</div>
 					</div>
+	
 				</div> <!-- .container -->
+				
+				<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      
+      <div class="modal-body">
+
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>        
+        <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+</div>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div> 
 			</main>
 			<footer class="site-footer">
 				<div class="container">
@@ -250,13 +249,13 @@
 			</footer>
 		</div>
 		<!-- Default snippet for navigation -->
-		
+				
+		<script src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
+<script src='https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.js'></script>
 
+ 
 
-		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="js/plugins.js"></script>
-		<script src="js/app.js"></script>
-		
+    <script  src="js/index.js"></script>
 	</body>
 
 </html>
