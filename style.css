@@ -1792,7 +1792,8 @@ color: white;
     width: 100%;
   }
   .episode img {
-	  height: 240;
+	  max-height: 244px;
+	  min-height: 240px;
 }
 
 
