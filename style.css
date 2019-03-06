@@ -1749,7 +1749,6 @@ border: 2px solid #ccccff;
     height: 2.5px;
   background-color: #656783;
   color: white;
-  font-size: 16px;
   padding: 5px 20px;
   border: 2px solid #ccccff;
   border-radius: 15px 20px 20px 5px;
@@ -1767,15 +1766,12 @@ border: 2px solid #ccccff;
   text-align: center;
 }
 
-display: block;
-    width: 115px;
-    height: 25px;
-    background: #4E9CAF;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
+.text a{  
+  font-size: 16px;
+text-shadow: 0 0 3px #F3F3F3;
+color: white;
+
+}
 
 .overlay {
 
