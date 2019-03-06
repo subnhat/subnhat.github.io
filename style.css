@@ -1786,14 +1786,10 @@ border: 2px solid #ccccff;
 Modal video
 ***/
  
-}
-.close {
-  position: absolute;
-  top:0;
-  z-index: 999;
-  font-size:2rem;
-  font-weight: normal;
-  color:#fff;
 
+--
+.entry-content{
+max-height: 500px;
+overflow: scroll;
 }
 
